@@ -1,0 +1,20 @@
+{
+  "name": "gamelog-parser-api",
+  "version": "1.0.0",
+  "description": "Construa um parser para o arquivo de log games.log (em anexo junto ao teste).\r  O arquivo games.log é gerado pelo servidor de quake 3 arena. Ele registra todas as informações dos jogos, quando um jogo começa, quando termina, quem matou quem, quem morreu pq caiu no vazio, quem morreu machucado, entre outros.\r  O parser deve ser capaz de ler o arquivo, agrupar os dados de cada jogo, e em cada jogo deve coletar as informações de morte.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adlermo/gamelog-parser-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adlermo/gamelog-parser-api/issues"
+  },
+  "homepage": "https://github.com/adlermo/gamelog-parser-api#readme"
+}
