@@ -1,6 +1,4 @@
 const objetoParse = require('./parser/index');
-const hash = require('object-hash');
-const fs = require('fs')
 
 // Generate JSON game report
 let games = objetoParse.map(game => {
@@ -27,7 +25,7 @@ let games = objetoParse.map(game => {
     rank = JSON.parse(rank)
 
     return JSON.parse(`{
-        "${hash(game.game_id)}": ${JSON.stringify(rank)}
+        "${game.game_id}": ${JSON.stringify(rank)}
     }`);
 });
 

@@ -1,5 +1,7 @@
 module.exports = retornaObjetoKills = (() => {
     const fs = require('fs');
+    const hash = require('object-hash');
+
 
     // Reads the gamelog file
     let logFile = fs.readFileSync('./log/games.log').toString();
@@ -17,7 +19,7 @@ module.exports = retornaObjetoKills = (() => {
         if (line.includes("InitGame:")) {
             gameId++;
             let parser = `{
-                "game_id": ${gameId},
+                "game_id": "${hash(gameId)}",
                 "game_data":{
                     "total_kills": 0,
                     "players": [],
