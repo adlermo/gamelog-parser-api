@@ -3,23 +3,28 @@
 
 ## Rotas 
  ```/ ``` - Acessando / você terá informações de como acessar as outras rotas
+ 
  ```/games ``` - Acessando /games você terá informações de todos os games
+ 
  ```/games/:idGame ```  - Acessando / você terá o rank de um jogo específico
-
 
 ## Descrição e Instruções da Tarefa
 
 ### Goal 1:
  Construa um parser para o arquivo de log games.log (em anexo junto ao teste).
+ 
  O arquivo games.log é gerado pelo servidor de quake 3 arena. Ele registra todas as informações dos jogos, quando um jogo começa, quando termina, quem matou quem, quem morreu pq caiu no vazio, quem morreu machucado, entre outros.
+ 
  O parser deve ser capaz de ler o arquivo, agrupar os dados de cada jogo, e em cada jogo deve coletar as informações de morte.
  
  __Exemplo:__
 
   ```21:42 Kill: 1022 2 22: <world> killed Isgalamido by MOD_TRIGGER_HURT```
+  
   (O player "Isgalamido" morreu pois estava ferido e caiu de uma altura que o matou.)
 
   ```2:22 Kill: 3 2 10: Isgalamido killed Dono da Bola by MOD_RAILGUN```
+  
   (O player "Isgalamido" matou o player Dono da Bola usando a arma Railgun.)
 
 Para cada jogo o parser deve gerar algo como:
@@ -58,4 +63,5 @@ REQUISITOS:
 
 ## Install & Run
   Para instalar tudo necessário apenas execute no terminal ```npm install```
+  
   Para iniciar o servidor apenas execute no terminal ```npm run dev``` __ou__ ```npm start```
