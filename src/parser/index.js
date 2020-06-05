@@ -10,11 +10,8 @@ const retornaObjetoKills = () => {
     let kills = 0;
 
     for (var line of logFile) {
-        if (line.includes("ShutdownGame:")) {
-            gameId++;
-        };
-
         if (line.includes("InitGame:")) {
+            gameId++;
             let parser = `{
                 "game_id": ${gameId},
                 "game_data":{
