@@ -56,9 +56,6 @@ module.exports = retornaObjetoKills = (() => {
         };
     };
 
-    // Writes the file
-    fs.writeFileSync("./src/game_data.json", JSON.stringify(gameData));
-
     // Returns total of games created
-    return "There was " + gameData.length + " games";
+    return gameData;
 })();
