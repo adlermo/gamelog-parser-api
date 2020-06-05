@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const games = require('./src/game_data.json');
+const games = require('./src/index');
 
 app.listen(3333);
 
@@ -16,7 +16,9 @@ app.get('/games', (req, res) => {
     res.status(200).json(games);
 });
 
-// Retrieve a game by passed id
+// Retrieve a game by a given id
 app.get('/games/:id', (req, res) => {
-    res.status(200).json(games[req.params.id]);
+    let id = (req.params.id);
+    let game = games.filter(game => game[id]);
+    res.status(200).json(game);
 });
