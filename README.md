@@ -2,15 +2,15 @@
 
 - [Rotas](#rotas)
  
-- [Instruções](#Descricao)
+- [Instruções](#descrição-e-instruções-da-tarefa)
 
-- [Tarefa 2:](#Tarefa 2:)
+- [Tarefa 2:](#tarefa-2)
 
-- [Tarefa 3](#Tarefa 3:)
+- [Tarefa 3](#tarefa-3)
 
-- [Install & Run](#Install & Run)
+- [Install & Run](#install&run)
  
-- [HEROKU DEPLOY](#HEROKU)
+- [HEROKU DEPLOY](#heroku-deploy)
 
 ## Rotas 
  ```/ ``` - Acessando / você terá informações de como acessar as outras rotas
