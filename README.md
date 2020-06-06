@@ -8,7 +8,7 @@
 
 - [Tarefa 3](#tarefa-3)
 
-- [Install & Run](#install&run)
+- [Install & Run](#install--run)
  
 - [HEROKU DEPLOY](#heroku-deploy)
 
