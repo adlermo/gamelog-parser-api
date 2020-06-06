@@ -1,5 +1,16 @@
 # QUAKE LOG PARSER
 
+- [Rotas](#rotas)
+ 
+- [Instruções](#Descricao)
+
+- [Tarefa 2:](#Tarefa 2:)
+
+- [Tarefa 3](#Tarefa 3:)
+
+- [Install & Run](#Install & Run)
+ 
+- [HEROKU DEPLOY](#HEROKU)
 
 ## Rotas 
  ```/ ``` - Acessando / você terá informações de como acessar as outras rotas
