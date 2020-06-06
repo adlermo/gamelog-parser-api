@@ -1,19 +1,61 @@
 # QUAKE LOG PARSER
 
 - [Rotas](#rotas)
- 
-- [Instruções](#descrição-e-instruções-da-tarefa)
 
 - [Install & Run](#install--run)
  
-- [HEROKU DEPLOY](#heroku-deploy)
+- [Instruções](#descrição-e-instruções-da-tarefa)
+ 
+- [Heroku Deploy](https://quake-log-api.herokuapp.com/)
 
 ## Rotas 
- ```/ ``` - Acessando / você terá informações de como acessar as outras rotas
+
+ ```GET / ```
+
+ Acessando / você apenas terá um texto com informações de como acessar as outras rotas
  
- ```/games ``` - Acessando /games você terá informações de todos os games
+ ```GET /games ```
  
- ```/games/:idGame ```  - Acessando / você terá o rank de um jogo específico
+ Acessando /games você terá uma lista dos games tirados do log, inclusive o id de um game que pode ser passado para a rota seguinte
+
+```
+ [
+  {
+    "game_id": "2e1cc5d852d9f51ffd88c7cb6e17a39f133a4f4e",
+    "game_data": {
+      "total_kills": 31,
+      "players": ["player2", "player1", ...],
+      "kills": {
+        "player2": 11,
+        "player1": 18,
+        ...
+      }
+    }
+  }
+ ]
+```
+ 
+ ```GET /games/:id```
+ 
+ Acessando /games/:id você terá o rank de jogadores em uma partida específicada pelo id
+
+```
+[
+  {
+    "2e1cc5d852d9f51ffd88c7cb6e17a39f133a4f4e": {
+      "firstPlace": 10,
+      "secondPlace": 8,
+      ...
+    }
+  }
+]
+```
+
+
+## Install & Run
+  Para instalar tudo necessário apenas execute no terminal ```npm install```
+  
+  Para iniciar o servidor apenas execute no terminal ```npm run dev``` __ou__ ```npm start```
 
 ## Descrição e Instruções da Tarefa
 
@@ -63,16 +105,6 @@ REQUISITOS:
 1.	O exercício __deverá ser feito em NodeJS.__
 2.	Faça testes unitários, suite de testes bem organizados.
 3.	Use git e tente fazer commits pequenos e bem descritos.
-4.	Faça pelo menos um README explicando como fazer o setup, uma explicação da solução proposta, o mínimo de documentação para outro desenvolvedor entender seu código
+4.	Faça pelo menos um README explicando como fazer o setup, uma explicação da solução proposta, o mínimo de documentação para outro desenvolvedor entender seu código.
 5.	Siga o que considera boas práticas de programação, coisas que um bom desenvolvedor olhe no seu código e não ache "feio" ou "ruim".
 6.	Após concluir o teste envie o link do git ou o projeto zipado para o e-mail que te enviou o teste. 
-
-
-## Install & Run
-  Para instalar tudo necessário apenas execute no terminal ```npm install```
-  
-  Para iniciar o servidor apenas execute no terminal ```npm run dev``` __ou__ ```npm start```
-
-
-## HEROKU DEPLOY
- [API QUAKER](https://quake-log-api.herokuapp.com/)

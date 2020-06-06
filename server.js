@@ -8,8 +8,12 @@ app.listen(process.env.PORT || 3333);
 
 // Default route gives instructions
 app.get('/', (req, res) => {
-    res.send(`You can see a game passing /games/:id
-Also, by requesting /games you will retrieve all games`);
+    res.send(`Hello World!
+
+You can see a list of games acessing /games
+
+Or, you can request a game passing /games/:id
+(ID is the hash you can take on /games)`);
 });
 
 // Retrieve all games
