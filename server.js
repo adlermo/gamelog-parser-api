@@ -4,7 +4,7 @@ const app = express();
 const games = require('./src/index');
 const gamesLog = require('./src/parser/index');
 
-app.listen(3333);
+app.listen(process.env.PORT || 3333);
 
 // Default route gives instructions
 app.get('/', (req, res) => {
