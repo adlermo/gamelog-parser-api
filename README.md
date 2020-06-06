@@ -65,3 +65,7 @@ REQUISITOS:
   Para instalar tudo necessário apenas execute no terminal ```npm install```
   
   Para iniciar o servidor apenas execute no terminal ```npm run dev``` __ou__ ```npm start```
+
+
+## HEROKU DEPLOY
+ [API QUAKER](https://quake-log-api.herokuapp.com/)
